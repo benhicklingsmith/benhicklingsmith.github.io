@@ -1,0 +1,31 @@
+$navs: 4;
+//$width: calc(100%);
+
+$tot_borders: calc($navs * 4px);
+$tot_width: calc(100% - $tot_borders);
+$width: calc($tot_width/4);
+
+.nav-option-active {
+    color: #162d52;
+    border-color: #04AA6D;
+}
+
+.nav-option-inactive{
+    color: #272cab;
+    border-color: #04AA6D;
+}
+
+.nav-option{
+    text-decoration: none;
+    float: left;
+    font-size: 16px;
+    width: $width; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+    border: 2px solid;
+}
+
+.nav-bar{
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
